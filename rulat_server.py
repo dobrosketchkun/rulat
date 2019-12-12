@@ -1,11 +1,12 @@
 """
-./rulat-server.py -l localhost -p 8000
+./rulat_server.py -l localhost -p 8000 -v 2
 """
 import argparse
 import requests
 import io
 from fetcher import fetch_page
 from http.server import HTTPServer, BaseHTTPRequestHandler
+from dicts import letters_v1, letters_v2, other
 
 headers = {'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) ' 
 					  'AppleWebKit/537.11 (KHTML, like Gecko) '
@@ -16,6 +17,8 @@ headers = {'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) '
 		'Accept-Language': 'en-US,en;q=0.8',
 		'Connection': 'keep-alive'}
 
+letters = dict()
+
 class S(BaseHTTPRequestHandler):
 	def data(self):
 		if not self.path:
@@ -23,7 +26,7 @@ class S(BaseHTTPRequestHandler):
 		else:
 			url_main = 'https://ru.wikipedia.org' + self.path
 
-		fetch_page(url_main, 'index.html')
+		fetch_page(url_main, 'index.html', letters)
 		return io.open('index.html', 'r', encoding='utf8', newline='\n').read()
 
 	def _set_headers(self):
@@ -32,20 +35,9 @@ class S(BaseHTTPRequestHandler):
 		self.end_headers()
 
 	def _html(self, message):
-		"""This just generates an HTML document that includes `message`
-		in the body. Override, or re-write this do do more interesting stuff.
-		"""
-		
-		#content = f"<html><body><h1>{message}</h1></body></html>"
-		# content = requests.get(url, headers=headers)
-		# content.raise_for_status()
 		content = self.data()
-		#fetch_page('https://ru.wikipedia.org' + self.path)
-		
-		# self._data = io.open('page.html', 'r', encoding='utf8', newline='\n').read
-
-		# return content.text.encode('utf-8')  # NOTE: must return a bytes object!
 		return content.encode('utf-8')
+
 	def do_GET(self):
 		self._set_headers()
 		self.wfile.write(self._html("hi!"))
@@ -55,12 +47,22 @@ class S(BaseHTTPRequestHandler):
 		self._set_headers()
 
 	def do_POST(self):
-		# Doesn't do anything with posted data
 		self._set_headers()
 		self.wfile.write(self._html("POST!"))
 
 
-def run(server_class=HTTPServer, handler_class=S, addr="localhost", port=8000):
+def run(version, server_class=HTTPServer, handler_class=S, addr="localhost", port=8000):
+	global letters
+	assert (version < 3 ), "There are only two versions of romanisation right now."
+	assert (version > 0 ), "There are only two versions of romanisation right now."
+	if version == 1:
+		letters = letters_v1
+		print('if',letters)
+	elif version == 2:
+		letters = letters_v2
+		print('else',letters)
+	else:
+		print("Assert, wtf")
 
 	server_address = (addr, port)
 	httpd = server_class(server_address, handler_class)
@@ -69,7 +71,6 @@ def run(server_class=HTTPServer, handler_class=S, addr="localhost", port=8000):
 	httpd.serve_forever()
 
 if __name__ == "__main__":
-
 	parser = argparse.ArgumentParser(description="Run a simple HTTP server")
 	parser.add_argument(
 		"-l",
@@ -84,5 +85,12 @@ if __name__ == "__main__":
 		default=8000,
 		help="Specify the port on which the server listens",
 	)
+	parser.add_argument(
+		"-v",
+		"--version",
+		type=int,
+		default=1,
+		help="Specify the version of romanisation type",
+	)
 	args = parser.parse_args()
-	run(addr=args.listen, port=args.port)
+	run(addr=args.listen, port=args.port, version = args.version)
