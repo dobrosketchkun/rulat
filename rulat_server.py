@@ -57,10 +57,8 @@ def run(version, server_class=HTTPServer, handler_class=S, addr="localhost", por
 	assert (version > 0 ), "There are only two versions of romanisation right now."
 	if version == 1:
 		letters = letters_v1
-		print('if',letters)
 	elif version == 2:
 		letters = letters_v2
-		print('else',letters)
 	else:
 		print("Assert, wtf")
 
