@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         RuLat
 // @namespace    http://tampermonkey.net/
-// @version      1.5
+// @version      1.8
 // @description  RuLat is an art-project user script
 // @author       https://github.com/dobrosketchkun
 // @match        http://*/*
@@ -16,52 +16,52 @@
     function transliterate(text) {
         // Define the mapping from Cyrillic to Latin
         const charMap = {
-            'A': 'A', 'a': 'a',
-            'B': 'B', 'b': 'b',
-            'V': 'V', 'v': 'v',
-            'G': 'G', 'g': 'g',
-            'D': 'D', 'd': 'd',
-            'E': 'E', 'e': 'e',
-            'JO': 'JO', 'jo': 'jo',
-            'X': 'X', 'x': 'x',
-            'Z': 'Z', 'z': 'z',
-            'I': 'I', 'i': 'i',
-            'J': 'J', 'j': 'j',
-            'K': 'K', 'k': 'k',
-            'L': 'L', 'l': 'l',
-            'M': 'M', 'm': 'm',
-            'N': 'N', 'n': 'n',
-            'O': 'O', 'o': 'o',
-            'P': 'P', 'p': 'p',
-            'R': 'R', 'r': 'r',
-            'S': 'S', 's': 's',
-            'T': 'T', 't': 't',
-            'U': 'U', 'u': 'u',
-            'F': 'F', 'f': 'f',
-            'H': 'H', 'h': 'h',
-            'TS': 'TS', 'ts': 'ts',
-            'C': 'C', 'c': 'c',
-            'W': 'W', 'w': 'w',
-            'WQ': 'WQ', 'wq': 'wq',
-            'Q': 'Q', 'q': 'q',
-            'Y': 'Y', 'y': 'y',
-            'Q': 'Q', 'q': 'q',
-            'JE': 'JE', 'je': 'je',
-            'JU': 'JU', 'ju': 'ju',
-            'JA': 'JA', 'ja': 'ja',
+            'А': 'A', 'а': 'a',
+            'Б': 'B', 'б': 'b',
+            'В': 'V', 'в': 'v',
+            'Г': 'G', 'г': 'g',
+            'Д': 'D', 'д': 'd',
+            'Е': 'E', 'е': 'e',
+            'Ё': 'JO', 'ё': 'jo',
+            'Ж': 'X', 'ж': 'x',
+            'З': 'Z', 'з': 'z',
+            'И': 'I', 'и': 'i',
+            'Й': 'J', 'й': 'j',
+            'К': 'K', 'к': 'k',
+            'Л': 'L', 'л': 'l',
+            'М': 'M', 'м': 'm',
+            'Н': 'N', 'н': 'n',
+            'О': 'O', 'о': 'o',
+            'П': 'P', 'п': 'p',
+            'Р': 'R', 'р': 'r',
+            'С': 'S', 'с': 's',
+            'Т': 'T', 'т': 't',
+            'У': 'U', 'у': 'u',
+            'Ф': 'F', 'ф': 'f',
+            'Х': 'H', 'х': 'h',
+            'Ц': 'TS', 'ц': 'ts',
+            'Ч': 'C', 'ч': 'c',
+            'Ш': 'W', 'ш': 'w',
+            'Щ': 'WQ', 'щ': 'wq',
+            'Ъ': 'Q', 'ъ': 'q',
+            'Ы': 'Y', 'ы': 'y',
+            'Ь': 'Q', 'ь': 'q',
+            'Э': 'JE', 'э': 'je',
+            'Ю': 'JU', 'ю': 'ju',
+            'Я': 'JA', 'я': 'ja',
         };
 
         // Define exception patterns and their replacements
         const exceptions = [
-            [/tsy/gi, 'tsy'],
-            [/wu/gi, 'wu'],
-            [/wy/gi, 'wy'],
-            [/wy/gi, 'wy'],
-            [/wi/gi, 'wi'],
-            [/xi/gi, 'xi'],
-            [/cu/gi, 'cu'],
-            [/([xwhtscwq])(q)(?=[^a-jajo]|$)/gi, '$1'],  // Remove final soft sign after sibilants if not followed by a vowel
-            [/tq?sja(?![a-jajo])/gi, 'tsa'],  // Replace -tsa and -tsja with 'tsa' if not followed by a vowel
+            [/цы/gi, 'tsy'],
+            [/шю/gi, 'wu'],
+            [/ши/gi, 'wy'],
+            [/шы/gi, 'wy'],
+            [/щи/gi, 'wi'],
+            [/жы/gi, 'xi'],
+            [/чю/gi, 'cu'],
+            [/([жшхцчщ])(ь)(?=[^а-яё]|$)/gi, '$1'],  // Remove final soft sign after sibilants if not followed by a vowel
+            [/ть?ся(?![а-яё])/gi, 'tsa'],  // Replace -ться and -тся with 'tsa' if not followed by a vowel
         ];
 
         // Apply exception replacements
@@ -73,7 +73,23 @@
         for (let i = 0; i < text.length; i++) {
             let char = text[i];
             if (charMap[char]) {
-                result += charMap[char];
+                let transliterated = charMap[char];
+                let isAllCaps = true;
+                let j = i;
+                while (j < text.length && charMap[text[j]]) {
+                    if (text[j] === text[j].toLowerCase()) {
+                        isAllCaps = false;
+                        break;
+                    }
+                    j++;
+                }
+                if (isAllCaps) {
+                    result += transliterated.toUpperCase();
+                } else if (char === char.toUpperCase() && (i === 0 || text[i-1].match(/[^a-zа-яё0-9]/i))) {
+                    result += transliterated[0].toUpperCase() + transliterated.slice(1).toLowerCase();
+                } else {
+                    result += transliterated.toLowerCase();
+                }
             }
             else {
                 result += char;
