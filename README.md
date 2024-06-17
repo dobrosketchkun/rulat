@@ -36,4 +36,4 @@
 
 ## Update 
 
-Помимо использования Python скрипта, можно получить представление о письменности используя [userscript](https://github.com/dobrosketchkun/rulatwiki/blob/master/tampermonkey_userscript_rulat.js) для [Tampermonkey](https://www.tampermonkey.net/) или аналогов.
+Помимо использования Python скрипта, можно получить представление о латинизации используя [userscript](https://github.com/dobrosketchkun/rulatwiki/blob/master/tampermonkey_userscript_rulat.js) для [Tampermonkey](https://www.tampermonkey.net/) или аналогов.
