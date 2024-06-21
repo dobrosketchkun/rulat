@@ -32,8 +32,16 @@
        
 #### TODO:
 
-* Починить внутристраничные якорные ссылки (сейчас они ведут на главную)
+1) Починить внутристраничные якорные ссылки (сейчас они ведут на главную)
 
 ## Update 
 
-Помимо использования Python скрипта, можно получить представление о латинизации используя [userscript](https://github.com/dobrosketchkun/rulatwiki/blob/master/tampermonkey_userscript_rulat.js) для [Tampermonkey](https://www.tampermonkey.net/) или аналогов.
+- Помимо использования Python скрипта, можно получить представление о латинизации используя [userscript](https://github.com/dobrosketchkun/rulatwiki/blob/master/tampermonkey_userscript_rulat.js) для [Tampermonkey](https://www.tampermonkey.net/) или аналогов.
+
+- Также появилась возможность транслитерации epub книг при помощи скритпа epub_rulat.py:
+
+```
+python epub_rulat.py input.epub output.epub
+```
+
+![скриншот результата транслитерации](alisa_v_strane.png)
