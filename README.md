@@ -9,12 +9,6 @@
 
 ![Таблица соответствий](https://i.imgur.com/koTiTeB.png)
 
-----
-Для использования в браузере можно использовать [userscript](https://github.com/dobrosketchkun/rulatwiki/blob/master/tampermonkey_userscript_rulat.js) для [Tampermonkey](https://www.tampermonkey.net/) или аналогов.
-
-#### Пример того как это выглядит в браузере
-![Русский язык](screenshot_wiki.jpg)        
-
 #### Варианты романизации
 
 Помимо основного варианта:
@@ -26,6 +20,14 @@
 ![2](https://i.imgur.com/edYx6u3.png)
 
 где они поменены местами, т.к. в русском языке (е) на втором месте по частоте использования, а (э) - на тридцатом
+
+----
+Для использования в браузере можно использовать [userscript](https://github.com/dobrosketchkun/rulatwiki/blob/master/tampermonkey_userscript_rulat.js) для [Tampermonkey](https://www.tampermonkey.net/) или аналогов.
+
+#### Пример того как это выглядит в браузере
+![Русский язык](screenshot_wiki.jpg)        
+
+
 
 ----
 Также есть возможность транслитерации epub книг при помощи скритпа epub_rulat.py:
