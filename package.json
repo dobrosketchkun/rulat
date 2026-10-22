@@ -1,0 +1,10 @@
+{
+  "name": "rulat",
+  "private": true,
+  "scripts": {
+    "test": "node tests/test_userscript.js && node tests/test_userscript_dom.js"
+  },
+  "devDependencies": {
+    "jsdom": "24.1.3"
+  }
+}

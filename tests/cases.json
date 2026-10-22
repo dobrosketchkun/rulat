@@ -1,0 +1,175 @@
+{
+    "alphabet_lower": [
+        ["а", "a"], ["б", "b"], ["в", "v"], ["г", "g"], ["д", "d"], ["е", "e"],
+        ["ё", "jo"], ["ж", "x"], ["з", "z"], ["и", "i"], ["й", "j"], ["к", "k"],
+        ["л", "l"], ["м", "m"], ["н", "n"], ["о", "o"], ["п", "p"], ["р", "r"],
+        ["с", "s"], ["т", "t"], ["у", "u"], ["ф", "f"], ["х", "h"], ["ц", "ts"],
+        ["ч", "c"], ["ш", "w"], ["щ", "wc"], ["ъ", "q"], ["ы", "y"], ["ь", "q"],
+        ["э", "eq"], ["ю", "ju"], ["я", "ja"]
+    ],
+    "alphabet_upper_single": [
+        ["А", "A"], ["Б", "B"], ["В", "V"], ["Г", "G"], ["Д", "D"], ["Е", "E"],
+        ["Ё", "Jo"], ["Ж", "X"], ["З", "Z"], ["И", "I"], ["Й", "J"], ["К", "K"],
+        ["Л", "L"], ["М", "M"], ["Н", "N"], ["О", "O"], ["П", "P"], ["Р", "R"],
+        ["С", "S"], ["Т", "T"], ["У", "U"], ["Ф", "F"], ["Х", "H"], ["Ц", "Ts"],
+        ["Ч", "C"], ["Ш", "W"], ["Щ", "Wc"], ["Ъ", "Q"], ["Ы", "Y"], ["Ь", "Q"],
+        ["Э", "Eq"], ["Ю", "Ju"], ["Я", "Ja"]
+    ],
+    "words_lower": [
+        ["арбуз", "arbuz"], ["банан", "banan"], ["вода", "voda"], ["гора", "gora"],
+        ["дом", "dom"], ["ель", "elq"], ["ёж", "jox"], ["жук", "xuk"],
+        ["зима", "zima"], ["игра", "igra"], ["йод", "jod"], ["кот", "kot"],
+        ["лампа", "lampa"], ["мама", "mama"], ["нос", "nos"], ["окно", "okno"],
+        ["папа", "papa"], ["рука", "ruka"], ["сок", "sok"], ["торт", "tort"],
+        ["утро", "utro"], ["флаг", "flag"], ["хлеб", "hleb"], ["цапля", "tsaplja"],
+        ["чай", "caj"], ["шар", "war"], ["щека", "wceka"], ["объём", "obqjom"],
+        ["сыр", "syr"], ["соль", "solq"], ["этаж", "eqtax"], ["юла", "jula"],
+        ["яма", "jama"]
+    ],
+    "words_title": [
+        ["Арбуз", "Arbuz"], ["Банан", "Banan"], ["Вода", "Voda"], ["Гора", "Gora"],
+        ["Дом", "Dom"], ["Ель", "Elq"], ["Ёж", "Jox"], ["Жук", "Xuk"],
+        ["Зима", "Zima"], ["Игра", "Igra"], ["Йод", "Jod"], ["Кот", "Kot"],
+        ["Лампа", "Lampa"], ["Мама", "Mama"], ["Нос", "Nos"], ["Окно", "Okno"],
+        ["Папа", "Papa"], ["Рука", "Ruka"], ["Сок", "Sok"], ["Торт", "Tort"],
+        ["Утро", "Utro"], ["Флаг", "Flag"], ["Хлеб", "Hleb"], ["Цапля", "Tsaplja"],
+        ["Чай", "Caj"], ["Шар", "War"], ["Щека", "Wceka"], ["Этаж", "Eqtax"],
+        ["Юла", "Jula"], ["Яма", "Jama"]
+    ],
+    "words_caps": [
+        ["АРБУЗ", "ARBUZ"], ["БАНАН", "BANAN"], ["ВОДА", "VODA"], ["ГОРА", "GORA"],
+        ["ДОМ", "DOM"], ["ЕЛЬ", "ELQ"], ["ЁЖ", "JOX"], ["ЖУК", "XUK"],
+        ["ЗИМА", "ZIMA"], ["ИГРА", "IGRA"], ["ЙОД", "JOD"], ["КОТ", "KOT"],
+        ["ЛАМПА", "LAMPA"], ["МАМА", "MAMA"], ["НОС", "NOS"], ["ОКНО", "OKNO"],
+        ["ПАПА", "PAPA"], ["РУКА", "RUKA"], ["СОК", "SOK"], ["ТОРТ", "TORT"],
+        ["УТРО", "UTRO"], ["ФЛАГ", "FLAG"], ["ХЛЕБ", "HLEB"], ["ЦАПЛЯ", "TSAPLJA"],
+        ["ЧАЙ", "CAJ"], ["ШАР", "WAR"], ["ЩЕКА", "WCEKA"], ["ОБЪЁМ", "OBQJOM"],
+        ["СЫР", "SYR"], ["СОЛЬ", "SOLQ"], ["ЭТАЖ", "EQTAX"], ["ЮЛА", "JULA"],
+        ["ЯМА", "JAMA"]
+    ],
+    "e_and_eq": [
+        ["еда", "eda"], ["лес", "les"], ["проект", "proekt"], ["поэт", "poeqt"],
+        ["дуэль", "dueqlq"], ["аэропорт", "aeqroport"], ["мэр", "meqr"],
+        ["мэрия", "meqrija"], ["эхо", "eqho"], ["Эхо", "Eqho"], ["ЭХО", "EQHO"],
+        ["экзамен", "eqkzamen"], ["ЭКЗАМЕН", "EQKZAMEN"], ["Эдуард", "Eqduard"],
+        ["её", "ejo"], ["Её", "Ejo"], ["ЕЁ", "EJO"], ["ещё", "ewcjo"],
+        ["съесть", "sqestq"]
+    ],
+    "jo": [
+        ["ёлка", "jolka"], ["Ёлка", "Jolka"], ["ЁЛКА", "JOLKA"], ["мёд", "mjod"],
+        ["всё", "vsjo"], ["ВСЁ", "VSJO"], ["актёр", "aktjor"], ["шёл", "wjol"],
+        ["жёлтый", "xjoltyj"], ["чёрный", "cjornyj"], ["щётка", "wcjotka"],
+        ["твоё", "tvojo"], ["объёмный", "obqjomnyj"]
+    ],
+    "hard_and_soft_signs": [
+        ["семья", "semqja"], ["вьюга", "vqjuga"], ["пьеса", "pqesa"], ["бьёт", "bqjot"],
+        ["шьёт", "wqjot"], ["объявление", "obqjavlenie"], ["съёмка", "sqjomka"],
+        ["подъезд", "podqezd"], ["Подъезд", "Podqezd"], ["ПОДЪЕЗД", "PODQEZD"],
+        ["изъян", "izqjan"], ["адъютант", "adqjutant"],
+        ["сверхъестественный", "sverhqestestvennyj"], ["мышь", "mywq"],
+        ["ночь", "nocq"], ["рожь", "roxq"], ["вещь", "vewcq"], ["ешь", "ewq"],
+        ["пишешь", "piwewq"], ["день", "denq"], ["ДЕНЬ", "DENQ"], ["мать", "matq"]
+    ],
+    "hushers_and_ts": [
+        ["щи", "wci"], ["щит", "wcit"], ["щука", "wcuka"], ["Щука", "Wcuka"],
+        ["ЩУКА", "WCUKA"], ["борщ", "borwc"], ["ищу", "iwcu"], ["площадь", "plowcadq"],
+        ["счастье", "scastqe"], ["мужчина", "muxcina"], ["веснушчатый", "vesnuwcatyj"],
+        ["шило", "wilo"], ["Шила", "Wila"], ["шашлык", "wawlyk"], ["жизнь", "xiznq"],
+        ["ЖИЗНЬ", "XIZNQ"], ["жир", "xir"], ["парашют", "parawjut"],
+        ["брошюра", "browjura"], ["чудо", "cudo"], ["чучело", "cucelo"], ["час", "cas"],
+        ["ЧАС", "CAS"], ["цирк", "tsirk"], ["Цирк", "Tsirk"], ["цыган", "tsygan"],
+        ["лицо", "litso"], ["отца", "ottsa"], ["ЦЕНА", "TSENA"]
+    ],
+    "reflexive_verbs": [
+        ["смеётся", "smejotsja"], ["СМЕЁТСЯ", "SMEJOTSJA"], ["смеяться", "smejatqsja"],
+        ["моется", "moetsja"], ["учиться", "ucitqsja"]
+    ],
+    "j": [
+        ["йогурт", "jogurt"], ["район", "rajon"], ["майонез", "majonez"], ["мой", "moj"],
+        ["Нью-Йорк", "Nqju-Jork"], ["НЬЮ-ЙОРК", "NQJU-JORK"], ["Йошкар-Ола", "Jowkar-Ola"]
+    ],
+    "mixed_case_words": [
+        ["ВКонтакте", "VKontakte"], ["КамАЗ", "KamAZ"], ["МакДональдс", "MakDonalqds"],
+        ["пРиВеТ", "pRiVeT"], ["ЩщЩ", "WcwcWc"], ["ЁжИк", "JoxIk"], ["ЮЛя", "JuLja"]
+    ],
+    "all_caps": [
+        ["СССР", "SSSR"], ["РФ", "RF"], ["МГУ", "MGU"], ["ЦСКА", "TSSKA"], ["ЧП", "CP"],
+        ["ЖЖ", "XX"], ["ЯД", "JAD"], ["ЩИ", "WCI"], ["ЭЭЭ", "EQEQEQ"], ["ЧЁРТ", "CJORT"],
+        ["ЮНЕСКО", "JUNESKO"], ["ПРИВЕТ, МИР!", "PRIVET, MIR!"],
+        ["ООО «ЁЛКА»", "OOO «JOLKA»"]
+    ],
+    "single_capital_letter": [
+        ["Я", "Ja"], ["Я!", "Ja!"], ["я ЗНАЮ", "ja ZNAJU"], ["Я знаю", "Ja znaju"],
+        ["Я ЗНАЮ", "JA ZNAJU"], ["ЗНАЮ Я", "ZNAJU JA"], ["Я\nЗНАЮ", "JA\nZNAJU"],
+        ["Я И МЫ", "JA I MY"], ["Я, ТЫ И ОН", "JA, TY I ON"], ["А Я ЗНАЮ", "A JA ZNAJU"],
+        ["ЗНАЮ Я и ТЫ", "ZNAJU JA i TY"], ["ЮЛЯ. Я знаю", "JULJA. Ja znaju"],
+        ["Я сказал: ЮЛЯ", "Ja skazal: JULJA"], ["ГЛАВА I. Я знаю", "GLAVA I. Ja znaju"],
+        ["Ушёл В ЛЕС", "Uwjol V LES"], ["В МОСКВЕ", "V MOSKVE"], ["ВСЁ Ё", "VSJO JO"],
+        ["Ю. А. Гагарин", "Ju. A. Gagarin"], ["Ю. А. ГАГАРИН", "JU. A. GAGARIN"],
+        ["Э", "Eq"], ["Э-Э-Э", "Eq-Eq-Eq"], ["Э, НЕТ", "EQ, NET"],
+        ["Ж/Д", "X/D"], ["Щ/Ё", "Wc/Jo"]
+    ],
+    "latin_context": [
+        ["Я API", "JA API"], ["Я OK", "JA OK"], ["OK, Я ЗНАЮ", "OK, JA ZNAJU"],
+        ["Я использую API", "Ja ispolqzuju API"], ["Я ZNAJU", "JA ZNAJU"],
+        ["Я znaju", "Ja znaju"], ["I Я", "I Ja"], ["Hello Я", "Hello Ja"]
+    ],
+    "no_cyrillic": [
+        ["", ""], [" ", " "], ["\t\n", "\t\n"], ["Hello, world!", "Hello, world!"],
+        ["123", "123"], ["2+2=4", "2+2=4"], ["e-mail", "e-mail"], ["🙂", "🙂"],
+        ["café", "café"], ["Ελληνικά", "Ελληνικά"]
+    ],
+    "mixed_text": [
+        ["Hello, мир!", "Hello, mir!"], ["мирWorld", "mirWorld"], ["SMS-ка", "SMS-ka"],
+        ["iPhone-а", "iPhone-a"], ["Wi-Fi роутер", "Wi-Fi router"], ["5кг", "5kg"],
+        ["В 2024 ГОДУ", "V 2024 GODU"], ["2024 год, т.е. «Ъ»", "2024 god, t.e. «Q»"],
+        ["и т.д.", "i t.d."], ["«Ёлки-палки»", "«Jolki-palki»"], ["(юфть)", "(juftq)"],
+        ["—Да?—Нет.", "—Da?—Net."], ["Привет,\tмир!\n", "Privet,\tmir!\n"],
+        ["Мой 🙂 кот", "Moj 🙂 kot"]
+    ],
+    "other_cyrillic_untouched": [
+        ["Київ", "Kiїv"], ["КИЇВ", "KIЇV"], ["ґанок", "ґanok"], ["ўзор", "ўzor"]
+    ],
+    "sentences": [
+        ["Съешь же ещё этих мягких французских булок, да выпей чаю.",
+         "Sqewq xe ewcjo eqtih mjagkih frantsuzskih bulok, da vypej caju."],
+        ["СЪЕШЬ ЖЕ ЕЩЁ ЭТИХ МЯГКИХ ФРАНЦУЗСКИХ БУЛОК, ДА ВЫПЕЙ ЧАЮ.",
+         "SQEWQ XE EWCJO EQTIH MJAGKIH FRANTSUZSKIH BULOK, DA VYPEJ CAJU."],
+        ["В чащах юга жил бы цитрус? Да, но фальшивый экземпляр!",
+         "V cawcah juga xil by tsitrus? Da, no falqwivyj eqkzempljar!"],
+        ["Эх, чужак, общий съём цен шляп (юфть) — вдрызг!",
+         "Eqh, cuxak, obwcij sqjom tsen wljap (juftq) — vdryzg!"],
+        ["Широкая электрификация южных губерний даст мощный толчок подъёму сельского хозяйства.",
+         "Wirokaja eqlektrifikatsija juxnyh gubernij dast mowcnyj tolcok podqjomu selqskogo hozjajstva."],
+        ["Мой дядя самых честных правил,\nКогда не в шутку занемог,\nОн уважать себя заставил\nИ лучше выдумать не мог.",
+         "Moj djadja samyh cestnyh pravil,\nKogda ne v wutku zanemog,\nOn uvaxatq sebja zastavil\nI lucwe vydumatq ne mog."],
+        ["Подъезд, это ещё и мышь", "Podqezd, eqto ewcjo i mywq"]
+    ],
+    "soft_hyphens_and_stress": [
+        ["при­мер", "pri­mer"], ["ще­ка", "wce­ka"],
+        ["ПРИ­МЕР", "PRI­MER"], ["ПРИ­МЕР Я", "PRI­MER JA"],
+        ["ВЫ­ХОД Я", "VY­HOD JA"], ["­Щука­", "­Wcuka­"],
+        ["Ру́сский", "Rússkij"], ["РУ́ССКИЙ", "RÚSSKIJ"],
+        ["Я́ ЗНА́Ю", "JÁ ZNÁJU"], ["Я́ зна́ю", "Já znáju"],
+        ["Э́ТО", "ÉQTO"], ["э́то", "éqto"], ["Ё́ж", "Jóx"],
+        ["ЮЛЯ́", "JULJÁ"], ["что́", "ctó"], ["е́̈", "é̈"],
+        ["i­Phone Я", "i­Phone Ja"]
+    ],
+    "paragraph_parts": [
+        [[], []],
+        [["Я"], ["Ja"]],
+        [["", "Я", " "], ["", "Ja", " "]],
+        [["Я ", "ЗНАЮ"], ["JA ", "ZNAJU"]],
+        [["Я ", "знаю"], ["Ja ", "znaju"]],
+        [["ГЛАВА ", "Я", ""], ["GLAVA ", "JA", ""]],
+        [["ЮЛЯ. ", "Я", " знаю"], ["JULJA. ", "Ja", " znaju"]],
+        [["Я ", "ZNAJU"], ["JA ", "ZNAJU"]],
+        [["Ю", "ЛЯ"], ["JU", "LJA"]],
+        [["Щ", "ИТ"], ["WC", "IT"]],
+        [["Щ", "ука"], ["Wc", "uka"]],
+        [["Э", "ХО"], ["EQ", "HO"]],
+        [["Э", "хо"], ["Eq", "ho"]],
+        [["Привет, ", "мир", "!"], ["Privet, ", "mir", "!"]],
+        [["ЁЛКА", "-", "палка"], ["JOLKA", "-", "palka"]]
+    ]
+}
